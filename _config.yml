@@ -40,6 +40,12 @@ collections:
   web:
     output: true
     permalink: :collection/:path/
+  posts:
+    output: true
+    permalink: blog/:year/:month/:day/:title/
+  authors:
+    output: true
+    permalink: blog/author/:title/
 
 defaults:
   -
@@ -127,3 +133,14 @@ defaults:
     values:
       version: v3
       layout: tutorial
+  -
+    scope:
+      path: "_posts"
+    values:
+      layout: post
+      published: true
+  - scope:
+      path: "_authors"
+    values:
+      layout: author
+      published: true
