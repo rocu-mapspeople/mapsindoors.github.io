@@ -45,7 +45,7 @@ collections:
     permalink: blog/:year/:month/:day/:title/
   authors:
     output: true
-    permalink: blog/author/:title/
+    permalink: blog/authors/:title/
 
 defaults:
   -
