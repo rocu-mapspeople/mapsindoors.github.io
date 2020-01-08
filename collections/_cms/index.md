@@ -143,6 +143,13 @@ Remember to save before clicking on another Location or changing the page, other
 
 ## Buildings
 
+**Adding a building**
+
+* Click on the "Add building" button at the top-right of the page and a popup will show.
+* 
+
+**Editing a building**
+
 * Click on the pencil icon to the left of the Building name. A new menu will appear 
 * Edit Building name in the available languages 
 * Edit floor names
