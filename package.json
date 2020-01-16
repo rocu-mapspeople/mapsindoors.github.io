@@ -1,0 +1,29 @@
+{
+  "name": "mapsindoors.github.io",
+  "version": "0.0.1",
+  "description": "This is the repository holding all documentation related to developing apps on the [MapsIndoors](https://www.mapspeople.com/mapsindoors/) platform.",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "gulp-dart-sass": "^0.9.1",
+    "gulp-newer": "^1.4.0",
+    "midt": "^9.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MapsIndoors/mapsindoors.github.io.git"
+  },
+  "author": "MapsPeople A/S",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MapsIndoors/mapsindoors.github.io/issues"
+  },
+  "homepage": "https://github.com/MapsIndoors/mapsindoors.github.io#readme"
+}
