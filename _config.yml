@@ -4,6 +4,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   The documentation site for the MapsIndoors SDKs for iOS, Android and Web, as well as the Integration API and MapsIndoors CMS.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mapsindoors.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+localurl: "http://0.0.0.0:4000"
 
 # Build settings
 markdown: kramdown
@@ -14,6 +15,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - package.json
+  - css
+  - node_modules
 
 kramdown:
   # This is needed for the Table of Contents to work in Kramdown
