@@ -10,7 +10,7 @@ Location Sources is a new feature introduced in version 3 of MapsIndoors SDK for
 ## The Concepts
 The central concepts in this feature are Location Sources and Location Observers, and they are best described in the following illustration:
 
-![Location Data Sources, Observers and their relation](assets/source_observer.png)
+![Location Data Sources, Observers and their relation](assets/img/source_observer.png)
 
 ### Location Source
 Maintains an array of locations and notifies its Location Observers about location and status updates.

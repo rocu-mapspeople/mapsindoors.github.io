@@ -178,7 +178,7 @@ This is a list of all the Location Types in the Solution. From this list you can
 
 The *View settings* can be set for each Location Type. Use the settings to define how and when the icon and/or label is displayed on the map, and what is shown in the label.
 
-![View Settings]({{ site.url }}/assets/cms/location-types/view-settings.png)
+![View Settings]({{ site.url }}/assets/img/cms/location-types/view-settings.png)
 
 **Location Type templates**
 
