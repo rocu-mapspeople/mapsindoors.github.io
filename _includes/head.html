@@ -25,23 +25,13 @@
     <meta name="twitter:title" content="{{ page.title }} - {{ site.title }}" />
     <meta name="twitter:image" content="https://mapspeople.com/wp-content/uploads/untitleddesign5.jpg" />
 
-    {% if jekyll.environment == 'production' %}
-        <!-- Keep the style.css-file below the Tachyons-file so the relevant classes can be overridden when (rarely) needed. -->
-        <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css">
-        <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css">
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/github.min.css">
-        {% if page.layout == 'front' %}
-        <link rel="stylesheet" href="{{ site.url }}/assets/css/front.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap" rel="stylesheet">
-        {% endif %}
-    {% else %}
-        <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css">
-        <link rel="stylesheet" href="{{ site.localurl }}/assets/css/style.css">
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/github.min.css">
-        {% if page.layout == 'front' %}
-        <link rel="stylesheet" href="{{ site.localurl }}/assets/css/front.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap" rel="stylesheet">
-        {% endif %}
+    <!-- Keep the style.css-file below the Tachyons-file so the relevant classes can be overridden when (rarely) needed. -->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css">
+    <link rel="stylesheet" href="{% if jekyll.environment == 'production' %}{{ site.url }}{% endif %}/assets/css/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/github.min.css">
+    {% if page.layout == 'front' %}
+    <link rel="stylesheet" href="{% if jekyll.environment == 'production' %}{{ site.url }}{% endif %}/assets/css/front.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap" rel="stylesheet">
     {% endif %}
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
